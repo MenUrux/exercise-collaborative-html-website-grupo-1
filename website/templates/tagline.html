@@ -1,3 +1,44 @@
 <!-- your html code here -->
 <!-- Also called a hero image or a jumbotron before bootstrap 5. This might be helpful: https://getbootstrap.com/docs/5.1/examples/jumbotron/ -->
-<p>Hello, I'm the tagline and I was loaded using ajax from templates/tagline.html</p>
+<style>
+    .hero {
+        position: relative;
+        background-image: url('./assets/img/bg.jpg');
+        background-size: cover;
+        background-position: center;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        text-align: center;
+    }
+
+    .hero-overlay {
+        background-color: white;
+        padding: 20px;
+        width: 95%;
+        max-width: 1200px;
+        text-align: center;
+    }
+
+    .display-2 {
+        margin-bottom: 1rem;
+        color: black;
+        margin: 0 auto;
+    }
+
+    .display-3 {
+        color: black;
+        margin-bottom: 2rem;
+    }
+</style>
+
+<section class="hero d-flex flex-column gap-3">
+    <div class="hero-overlay">
+        <h1 class="display-2 fw-semi-bold">One Page Wonder</h1>
+    </div>
+    <div class="hero-overlay">
+        <p class="display-3">Will Knock Your Socks Off</p>
+    </div>
+</section>
